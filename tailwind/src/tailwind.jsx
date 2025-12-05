@@ -1,6 +1,9 @@
 import './tailwind.css'
 import img from './assets/1.webp'
+import './Card.jsx'
 import { AiFillAlert } from "react-icons/ai";
+import Card from './Card.jsx';
+import img1 from './assets/1.webp'
 
 const tailwind =()=>{
     return(
@@ -9,6 +12,8 @@ const tailwind =()=>{
          1.025 px=> sm:flex tablet
          1.280 px=> md:flex laptop 
           react icoms icons ki website
+
+    // react dom install => npm i react-router-dom
           
           virtul dom use krta hai isliey easy ho jata hai */}
          <header className='w-full flex h-18 justify-around items-center  border-2 bg-gray-950 text-amber-50'>
@@ -27,7 +32,15 @@ const tailwind =()=>{
                 </nav> 
          <button className='hover:bg-amber-400 border p-2 rounded-2xl text-blue-400 bg-amber-400 font-bold outline-black'>Login</button>
          </header>
-        </>
+
+      
+         <Card img={img1} name={'simran'} age={21} city={'bhopal'}></Card>
+         <Card img={img1} name={'shreya'} age={20} city={'multai'}></Card>
+         <Card img={img1} name={'pawar'} age={23} city={'chikhlikalan'}></Card>
+        <Card img={img1} name={'prashant'} age={22} city={'New York'}></Card>
+        </>   // react fragment 
+    
+
     )
 }
 
