@@ -1,0 +1,25 @@
+{
+    "hotel":[
+        {
+            "name": "sid",
+            "aadharno":123456789,
+            "city":"bhopal",
+            "checkin":"15-12-2025",
+            "checkout":"18-12-2025",
+            "people":2,
+            "total":1500
+        },
+
+         {
+            "name": "pras",
+            "age":22,
+            "aadharno":693024643878,
+            "city":"multai",
+            "checkin":"16-12-2025",
+            "checkout":"19-12-2025",
+            "people":3,
+            "total":2250
+        }
+    ]
+    
+}

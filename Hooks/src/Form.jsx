@@ -52,7 +52,7 @@ const Form = () => {
       <h2>Checkbox se Color Change</h2>
 
       <label>
-        <input type="checkbox" onChange={() => setColor("red")} checked={color === "red"}/>
+        <input className='text-red-500' type="checkbox" onChange={() => setColor("red")} checked={color === "red"}/>
         Red
       </label>
 
