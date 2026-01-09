@@ -1,5 +1,3 @@
-import React from 'react' 
-import "./tailwind.css"
 import { Outlet ,Link} from 'react-router-dom'
 const Layout = () => {
   return (
@@ -7,14 +5,15 @@ const Layout = () => {
     <header className='w-full flex h-18 justify-around items-center  border-2 bg-gray-950 text-amber-50'>
                 <nav>
                     <ul className='flex-gap-10 font-bold text-2xl  sm:flex gap-5 hidden '>
+                      
                         <li><Link to="/home" className='p-4 hover:bg-green-600'>home</Link></li>
                         <li><Link to="/about" className='p-4 hover:bg-green-600'>about</Link></li>
                         <li><Link to="/services" className='p-4 hover:bg-green-600'>services</Link></li>
                         <li><Link to="/contact" className='p-4 hover:bg-green-600'>contact</Link></li>
                         <li><Link to="/shreya" className='p-4 hover:bg-pink-600 -600'>Shreya</Link></li>
                          <li><Link to="/prashant" className='p-4 hover:bg-pink-600 -600'>prashant</Link></li>
-                        {/* <img src="vite.svg" alt="" />
-                        <img src="vite.svg" alt="" /> */}
+                         <img src="vite.svg" alt="" />
+                        <img src="vite.svg" alt="" />
                    
                         
                         
@@ -24,10 +23,17 @@ const Layout = () => {
              </header>
 
                  <div className='h-5 '>
-                  <img src="photo1.webp" alt="" />
                   </div>
+{/* component will be rendered here */} 
       <Outlet />
     </>
   )
 }
 export default Layout
+
+// anker tag will be replaced by Link from react-router-dom for navigation without reloading the page
+// Link to=""  replaces href=""
+// Outlet is used to render the matched child route component inside the parent route component
+//element={<Layout/>}  Layout is parent route component
+//<Route path="home" element={<Home/>}/>  Home is child route component
+// when we click on Link to="home"  Home component will be rendered inside Layout component at the place of <Outlet/>

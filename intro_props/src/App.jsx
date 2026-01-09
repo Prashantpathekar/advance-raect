@@ -1,7 +1,7 @@
 import React from 'react'
 import './new.css'
 import logo from'./assets/react.svg'
-import Navbar from './Navbar'
+import Navbar from './Map'
 import Home from './Home'
 const App=()=>{
 return(

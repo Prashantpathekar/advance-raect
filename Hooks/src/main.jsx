@@ -5,8 +5,8 @@ import './index.css'
 //import App from './Form.jsx'
 //import App from './Character.jsx'
 //import App from './FormHan.jsx'
-import App from './Bits.jsx'
-
+// import App from './Bits.jsx'
+import App from './Incdec.jsx'
 
 
 

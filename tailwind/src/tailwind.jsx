@@ -6,16 +6,32 @@ import Card from './Card.jsx';
 import img1 from './assets/1.webp'
 
 const tailwind =()=>{
+
+    let fruits = ['mango','banana','grapes']  //map 
+
     return(
         <>
+        {fruits.map((item)=>  //variable or callback function (item) map     =>   <input key={item.id} defaultValue={item.name} />
+
+        <ul>
+            <li>{item}</li>
+        </ul>
+        
+        )}
         {/* response => 0.640 px => by default
-         1.025 px=> sm:flex tablet
-         1.280 px=> md:flex laptop 
-          react icoms icons ki website
+         sm:flex tablet  640px to 768px
+         md:flex laptop   768px to 1024px
+         lg=1024  desktop px to 1280 px
+            xl=1280 px to 1536 px
+        resonsive hidden sm:block md:flex gap-4  */}
+
+          {/* react router dom => routing krne k liey use hota hai 
+          single page application banane k liey use hota hai
+
 
     // react dom install => npm i react-router-dom
-          
           virtul dom use krta hai isliey easy ho jata hai */}
+
          <header className='w-full flex h-18 justify-around items-center  border-2 bg-gray-950 text-amber-50'>
                 <img src={img} alt="logo" className='w-20 h-20 rounded-full'/>
             <nav>
@@ -24,8 +40,8 @@ const tailwind =()=>{
                     <li className='p-4 hover:bg-green-600'>about</li>
                     <li className='p-4 hover:bg-green-600'>services</li>
                     <li className='p-4 hover:bg-green-600'>contact</li>
-                    <li className='p-4 hover:bg-pink-600 -600'>shreya</li>
-                     <li className='p-4 hover:bg-pink-600 -600'>prashant</li>
+                    {/* <li className='p-4 hover:bg-pink-600 -600'></li>
+                     <li className='p-4 hover:bg-pink-600 -600'>prashant</li> */}
     
                 <img src="vite.svg" alt="" />
      </ul>
@@ -34,8 +50,8 @@ const tailwind =()=>{
          </header>
 
       
-         <Card img={img1} name={'simran'} age={21} city={'bhopal'}></Card>
-         <Card img={img1} name={'shreya'} age={20} city={'multai'}></Card>
+         <Card img={img1} name={'hello'} age={21} city={'bhopal'}></Card>
+         <Card img={img1} name={'name'} age={20} city={'multai'}></Card>
          <Card img={img1} name={'pawar'} age={23} city={'chikhlikalan'}></Card>
         <Card img={img1} name={'prashant'} age={22} city={'New York'}></Card>
         </>   // react fragment 

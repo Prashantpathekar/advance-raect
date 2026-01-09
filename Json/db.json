@@ -19,6 +19,17 @@
             "checkout":"19-12-2025",
             "people":3,
             "total":2250
+        },
+
+           {
+            "name": "shre",
+            "age":21,
+            "aadharno":6930255878,
+            "city":"multapi",
+            "checkin":"02-12-2025",
+            "checkout":"31-12-2025",
+            "people":2,
+            "total":3000
         }
     ]
     
