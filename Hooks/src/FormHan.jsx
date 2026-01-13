@@ -12,9 +12,9 @@ let [form,setform]=useState(
   }
 )
 
-let handleChange=(e)=>{
+let handleChange=(e)=>{    //use the spred operator
   setform({...form,[e.target.name]:e.target.value})
-}
+} 
 let Handlesubmit=(e)=>{
   e.preventDefault()  // stop the form reloading
   if(form.name.trim()==""){

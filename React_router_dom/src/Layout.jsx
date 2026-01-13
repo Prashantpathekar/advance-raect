@@ -6,7 +6,7 @@ const Layout = () => {
                 <nav>
                     <ul className='flex-gap-10 font-bold text-2xl  sm:flex gap-5 hidden '>
                       
-                        <li><Link to="/home" className='p-4 hover:bg-green-600'>home</Link></li>
+                        <li><Link to="/home" className='p-4 hover:bg-green-600 md:justify-center'>home</Link></li>
                         <li><Link to="/about" className='p-4 hover:bg-green-600'>about</Link></li>
                         <li><Link to="/services" className='p-4 hover:bg-green-600'>services</Link></li>
                         <li><Link to="/contact" className='p-4 hover:bg-green-600'>contact</Link></li>

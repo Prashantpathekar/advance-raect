@@ -22,7 +22,7 @@ import React from "react";
 const Child = ({ name, age, price, img }) => {
   return (
     <>
-      <p className="card bg-pink">My name is {name}</p>
+      <p className="text-blue-700 mask-b-from-emerald-100 bg-pink-500">My name is {name}</p>
       <p>My age is {age}</p>
       <p>My price is {price}</p>
       <img src={img} alt="profile" />

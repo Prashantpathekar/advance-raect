@@ -10,7 +10,6 @@ const Home = () => {
 
   return (
     <>
-    
       <h1>Home Page</h1> <br /><br />
   <button onClick={okk}>Go to the About page</button>
 

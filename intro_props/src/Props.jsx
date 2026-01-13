@@ -17,7 +17,7 @@ const App = () => {
       ]
   return (
     <>
-        <h1>home page</h1>
+<h1 className="text-3xl font-semibold block underline m-4 text-amber-500">Home Page</h1>
         {
           course.map((item)=>
           <Child name={item.name} 
@@ -53,3 +53,6 @@ export default App
 //   );
 // }
 // export default App;
+
+
+// ui par dikhna ka liye usestate ka use krege.

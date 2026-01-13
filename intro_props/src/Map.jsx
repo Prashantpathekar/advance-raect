@@ -30,8 +30,7 @@ const products = [
           <img
             src={item.image}
             alt={item.name}
-            className="h-40 w-full object-cover rounded-lg"
-          />
+          className="h-40 w-full object-cover rounded-lg"/>
           <h2 className="font-semibold mt-2">{item.name}</h2>
           <p className="text-gray-600">₹{item.price}</p>
         </div>
