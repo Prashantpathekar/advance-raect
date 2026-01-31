@@ -67,7 +67,7 @@ const Form = () => {
         style={{ marginTop: "20px", height: "150px",width: "150px",border: "2px solid black",backgroundColor: color,}}>
             
     </div>
-
+<h1>hello</h1>
     </div>
   );
 }
